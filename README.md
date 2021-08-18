@@ -1,93 +1,21 @@
-npm# parcel-project-template
+Адаптивный сайт с использованием технологий:
 
-## Developing
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
 
-### Prerequisites
+  <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> 
+  <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/webpack/webpack-original-wordmark.svg" alt="webpack" height="40"/>
+  <img src="https://www.vectorlogo.zone/logos/npmjs/npmjs-ar21.svg" alt="npm" height="40"/>
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/babel/babel-original.svg" alt="babel" width="40" height="40"/>
 
-На компьютере должен быть установлен [Node.js](https://nodejs.org/en/).
+  <img align="left" alt="GitHub" width="32px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
+  <img alt="Visual Studio Code" width="32px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
+ </p>
 
-Для корректной работы SASS-компилятора и других инструментов, необходимо один
-раз глобально поставить дополнительные пакеты, выполнив в терминале следующие
-команды. Пользователям MacOS ничего делать не нужно.
+Сайт: https://zinaida-razinkova.github.io/IceCream/
+![фото перечня энд-поинтов ](swagger.jpg)
 
-Пользователям **Windows**, в режиме администратора.
-[Как запусттить Powershell](https://youtu.be/p2tFnxcymwk) в режиме
-администратора.
-
-```shell
-npm install --global --production windows-build-tools
-```
-
-Вот как выглядит процесс успешной установки для пользователей **Windows**.
-
-![Установка windows-build-tools](https://user-images.githubusercontent.com/1426799/45007904-bde9f280-afb4-11e8-8a35-c77dffaffa2a.gif)
-
-Пользователям **Linux**.
-
-```shell
-sudo apt-get install gcc g++ make
-```
-
-### Setting up Dev
-
-Один раз на проект установить все зависимости.
-
-```shell
-npm install
-```
-
-И запустить режим разработки.
-
-```shell
-npm run dev
-```
-
-Во вкладке браузера перейти по адресу
-[http://localhost:1234](http://localhost:1234).
-
-### Building
-
-Для того чтобы создать оптимизированные файлы для хостинга, необходимо выполнить
-следующую команду. В корне проекта появится папка `build` со всеми
-оптимизированными ресурсами.
-
-```shell
-npm run build
-```
-
-### Deploying / Publishing
-
-Сборка может автоматически деплоить билд на GitHub Pages удаленного (remote)
-репозитория. Для этого необходимо в файле `package.json` отредактировать поле
-`homepage`, заменив имя пользователя и репозитория на свои.
-
-```json
-"homepage": "https://имя_пользователя.github.io/имя_репозитория"
-```
-
-Также необходимо отредактировать скрипт "predeploy".
-
-```json
-"predeploy": "npm run build -- --public-url='/имя_репозитория/'"
-```
-
-После чего в терминале выполнить следующую команду.
-
-```shell
-npm run deploy
-```
-
-Если нет ошибок в коде и свойство `homepage` указано верно, запустится сборка
-проекта в продакшен, после чего содержимое папки `build` будет помещено в ветку
-`gh-pages` на удаленном (remote) репозитории. Через какое-то время живую
-страницу можно будет посмотреть по адресу указанному в отредактированном
-свойстве `homepage`.
-
-## Configuration
-
-- Все паршалы файлов стилей должны лежать в папке `src/sass` и импортироваться в
-  `src/sass/main.scss`
-- Изображения добавляйте в папку `src/images`, заранее оптимизировав их. Сборщик
-  просто копирует используемые изображения чтобы не нагружать вашу систему
-  оптимизацией десятков картинок, так как на слабых компьютерах это повесит
-  систему.
